@@ -231,7 +231,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8265de6fe9fda954299f9003c25d9af2, type: 2}
   - {fileID: 11400000, guid: 1d00e6f1a5e91c64e9afb95feed475ff, type: 2}
   - {fileID: 11400000, guid: 1832041fa3a8193418a65adcde10b7b0, type: 2}
-  capsuleData: {fileID: 11400000, guid: 8265de6fe9fda954299f9003c25d9af2, type: 2}
+  - {fileID: 11400000, guid: ea00d1cd9a4c96c4fbb5dae18289c907, type: 2}
+  - {fileID: 11400000, guid: ee10af49581beef46b87f8084352a5d9, type: 2}
+  capsuleData: {fileID: 0}
   capsuleImage: {fileID: 2429448}
 --- !u!114 &2429452
 MonoBehaviour:
