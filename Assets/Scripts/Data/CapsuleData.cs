@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "NewCapsuleData", menuName = "IdolClicker/Capsule Data")]
@@ -7,6 +8,23 @@ public class CapsuleData : ScriptableObject
     public string capsuleName = "기본 캡슐";
 
     [Header("내구도 설정 (랜덤 범위)")]
-    public float minDurability = 50f;  // 최소 내구도
-    public float maxDurability = 150f; // 최대 내구도
+    public int minDurability = 50;  
+    public int maxDurability = 150; 
+
+    [Header("드롭 의상 정보")]
+    public CostumeData costumeData; 
+
+    [Header("캡슐 랜덤 이미지 후보")]
+    public List<Sprite> spriteCandidates = new List<Sprite>();
+
+    public Sprite GetRandomSprite()
+    {
+        if (spriteCandidates == null || spriteCandidates.Count == 0)
+        {
+            return null; 
+        }
+
+        int randomIndex = Random.Range(0, spriteCandidates.Count);
+        return spriteCandidates[randomIndex];
+    }
 }
