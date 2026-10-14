@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e762b12af686064097b3e8741240721, type: 3}
+  m_Name: CostumeData_001
+  m_EditorClassIdentifier: Assembly-CSharp::CostumeData
+  costumeID: 1
+  costumeName: "\uD6C4\uB4DC\uD2F0"
+  costumeSprite: {fileID: -1283102050582533534, guid: 9f8f731fd85d68b4a88cb0c1c378004d, type: 3}
