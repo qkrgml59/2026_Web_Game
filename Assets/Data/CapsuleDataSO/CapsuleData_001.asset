@@ -18,5 +18,6 @@ MonoBehaviour:
   costumeData: {fileID: 11400000, guid: f644ecaad530b3e438fd8db1e1da3ee2, type: 2}
   spriteCandidates:
   - {fileID: -882880817894002612, guid: 3af193149e8a4b74e9feaecbb11a2333, type: 3}
-  - {fileID: 4086114450674948251, guid: c0e0e62bb4c83674b94e32dc3a1c77fa, type: 3}
-  - {fileID: 6754922890557274659, guid: 94df60444db478343a1c5a595ea28cf7, type: 3}
+  crackSprites:
+  - {fileID: -7577877943185020375, guid: b733c20b4a2146f47ac0cf9be141069c, type: 3}
+  - {fileID: -8309713907236878180, guid: 500457df4817eab4293196b0d69e4af3, type: 3}

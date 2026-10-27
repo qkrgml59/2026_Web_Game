@@ -13,5 +13,8 @@ MonoBehaviour:
   m_Name: CostumeData_002
   m_EditorClassIdentifier: Assembly-CSharp::CostumeData
   costumeID: 2
-  costumeName: "\uC154\uCE20"
-  costumeSprite: {fileID: 5278983922662615013, guid: 6982d4fe7bd957e4fb82620545641e57, type: 3}
+  costumeName: "\uAC00\uC744 \uCF54\uD2B8"
+  equipSlot: 0
+  rarity: 2
+  charmPoint: 2
+  costumeSprite: {fileID: -5388992788870062589, guid: 453feeddd301bba47a2caade3a1143a1, type: 3}

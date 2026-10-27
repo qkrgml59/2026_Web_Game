@@ -15,8 +15,9 @@ MonoBehaviour:
   capsuleName: "\uAE30\uBCF8 \uCEA1\uC290"
   minDurability: 15
   maxDurability: 150
-  costumeData: {fileID: 11400000, guid: 7c3d00e8dc004c649bbfbbbe4f2608ce, type: 2}
+  costumeData: {fileID: 11400000, guid: 29607a0c6472bb848bc624bf2c35cec1, type: 2}
   spriteCandidates:
-  - {fileID: -882880817894002612, guid: 3af193149e8a4b74e9feaecbb11a2333, type: 3}
-  - {fileID: 4086114450674948251, guid: c0e0e62bb4c83674b94e32dc3a1c77fa, type: 3}
   - {fileID: 6754922890557274659, guid: 94df60444db478343a1c5a595ea28cf7, type: 3}
+  crackSprites:
+  - {fileID: 5277572947491647777, guid: ad08a52635bb4664d8cdd99a3b2fbede, type: 3}
+  - {fileID: -342807497068337061, guid: e4990d258c837bd418b47e7fe316c8da, type: 3}

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b5a32b38fb3a734e98d3de01503b02e, type: 3}
+  m_Name: CapsuleData_011
+  m_EditorClassIdentifier: Assembly-CSharp::CapsuleData
+  capsuleName: "\uAE30\uBCF8 \uCEA1\uC290"
+  minDurability: 15
+  maxDurability: 150
+  costumeData: {fileID: 11400000, guid: 349e5d066b879594b83acceb0701680b, type: 2}
+  spriteCandidates:
+  - {fileID: -882880817894002612, guid: 3af193149e8a4b74e9feaecbb11a2333, type: 3}
+  crackSprites:
+  - {fileID: -7577877943185020375, guid: b733c20b4a2146f47ac0cf9be141069c, type: 3}
+  - {fileID: -8309713907236878180, guid: 500457df4817eab4293196b0d69e4af3, type: 3}

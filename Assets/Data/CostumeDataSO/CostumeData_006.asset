@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e762b12af686064097b3e8741240721, type: 3}
+  m_Name: CostumeData_006
+  m_EditorClassIdentifier: Assembly-CSharp::CostumeData
+  costumeID: 6
+  costumeName: "\uC655 \uB9AC\uBCF8"
+  equipSlot: 0
+  rarity: 3
+  charmPoint: 3
+  costumeSprite: {fileID: -2298783346349638202, guid: 6546998a75c530742aa1f4b8075c668d, type: 3}
