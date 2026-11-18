@@ -1,6 +1,8 @@
+using NUnit.Framework.Internal;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using TMPro;
+using UnityEngine.SocialPlatforms;
 
 public class CurrencyManager : MonoBehaviour
 {
@@ -66,6 +68,8 @@ public class CurrencyManager : MonoBehaviour
         currentGold += amount;
         UpdateGoldUI();
         SaveGold();
+
+        
     }
 
     // °ñµå Â÷°¨
@@ -99,6 +103,7 @@ public class CurrencyManager : MonoBehaviour
     {
         PlayerPrefs.SetInt("User_Gold", currentGold);
         PlayerPrefs.Save();
+        ScoreSaver.Instance.Save(currentGold);
     }
 
     private void LoadGold()
