@@ -117,7 +117,7 @@ public class CapsuleAnimationController : MonoBehaviour
 
         IsPlaying = false;
 
-        // ★ [완료 콜백 실행]
+  
         onComplete?.Invoke();
     }
 

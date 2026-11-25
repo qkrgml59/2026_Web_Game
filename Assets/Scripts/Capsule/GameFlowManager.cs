@@ -1,8 +1,9 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using TMPro;
+using static UnityEngine.InputSystem.LowLevel.InputStateHistory;
 
 public class GameFlowManager : MonoBehaviour
 {
@@ -32,6 +33,13 @@ public class GameFlowManager : MonoBehaviour
     [Header("연출 및 타임 설정")]
     public float noticeDisplayTime = 3.0f;
     public float popUpDuration = 0.4f;
+
+    static int playCount;                                // static: 씬을 다시 불러도 남음
+    static float lastAdTime = -999f;                     // 마지막 전면 광고를 띄운 시각
+    public float adCooldown = 30f;                       // 전면 광고 사이의 최소 간격 (초)
+
+
+
 
     private RectTransform capsuleRect;
     private Vector3 originalCapsuleScale;
@@ -86,9 +94,11 @@ public class GameFlowManager : MonoBehaviour
     // 캡슐 상자 클릭 버튼 이벤트
     public void OnBoxClicked()
     {
+        
+
         if (isStepProcessing) return;
 
-        //
+        
         if (CurrencyManager.Instance != null)
         {
             if (!CurrencyManager.Instance.TrySpendGold(capsulePrice))
@@ -103,6 +113,22 @@ public class GameFlowManager : MonoBehaviour
             }
         }
 
+        playCount++;
+
+        if (playCount % 3 == 0 && DummyAds.Instance != null)
+        {
+            isStepProcessing = true; // 광고 중 중복 클릭 방지
+            DummyAds.Instance.ShowInterstitial(StartDraw); // 광고 끝나면 StartDraw 실행
+        }
+        else
+        {
+            StartDraw();
+        }
+    }
+
+    private void StartDraw()
+    {
+        isStepProcessing = false; // Step2 코루틴이 내부에서 다시 true로 설정함
         StartCoroutine(Step2_DrawCapsuleRoutine());
     }
 
@@ -246,8 +272,11 @@ public class GameFlowManager : MonoBehaviour
 
     private void OnClickRetry()
     {
+
         Debug.Log("다시 뽑기 선택!");
         SetStep1_Start();
+        
+
     }
 
     private void OnClickEquip()
